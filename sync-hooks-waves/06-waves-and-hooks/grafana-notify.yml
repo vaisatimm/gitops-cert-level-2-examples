@@ -1,6 +1,8 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "-20"
   namespace: example06
   generateName: grafana-notify-
   labels:
